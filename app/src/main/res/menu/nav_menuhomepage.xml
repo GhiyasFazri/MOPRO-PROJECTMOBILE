@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single"
+        android:paddingTop="-10dp"
+        android:paddingBottom="-10dp">
+
+        <item
+
+            android:id="@+id/menu_profile"
+            android:icon="@drawable/ic11_account"
+            android:title="Profil"
+            tools:ignore="HardcodedText" />
+
+        <item
+            android:enabled="false"
+            app:actionLayout="@layout/divider_layout"
+            tools:ignore="MenuTitle" />
+
+
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic12_setting"
+            android:title="Pengaturan"
+            tools:ignore="HardcodedText" />
+
+        <item
+            android:enabled="false"
+            app:actionLayout="@layout/divider_layout"
+            tools:ignore="MenuTitle" />
+
+
+        <item
+            android:id="@+id/bookmark"
+            android:icon="@drawable/ic13_bookmark"
+            android:title="Bookmark"
+            tools:ignore="HardcodedText" />
+
+        <item
+            android:enabled="false"
+            app:actionLayout="@layout/divider_layout"
+            tools:ignore="MenuTitle" />
+
+        <item
+            android:id="@+id/notification"
+            android:icon="@drawable/ic14_notif"
+            android:title="Notifikasi"
+            tools:ignore="HardcodedText" />
+
+        <item
+            android:enabled="false"
+            app:actionLayout="@layout/divider_layout"
+            tools:ignore="MenuTitle" />
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic15_logout"
+            android:title="Logout"
+            tools:ignore="HardcodedText" />
+
+        <item
+            android:enabled="false"
+            app:actionLayout="@layout/divider_layout"
+            tools:ignore="MenuTitle" />
+
+    </group>
+</menu>

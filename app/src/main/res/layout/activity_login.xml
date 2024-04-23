@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".LoginActivity">
+
+    <!--FOTO BACKGROUND DAN DESIGN -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bcg_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vec2_0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView2_1"
+        android:layout_width="fill_parent"
+        android:layout_height="260dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.030"
+        app:shapeAppearanceOverlay="@style/circular"
+        app:srcCompat="@drawable/shape_shadow_circle"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="0dp">
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView2_2"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100"
+        app:srcCompat="@drawable/foto_aqua"
+        app:shapeAppearanceOverlay="@style/circular"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="0dp">
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView2_3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20sp"
+        app:layout_constraintTop_toBottomOf="@id/linear2_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:srcCompat="@drawable/foto_botol"
+        app:strokeColor="#000000"
+        app:strokeWidth="0dp">
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <!--BUTTON LOGIN & REGISTER -->
+    <LinearLayout
+        android:id="@+id/linear2_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView2_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.0">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginbtn"
+            android:onClick="loginpage"
+            android:layout_width="340dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_style_2"
+            android:text="Login"
+            android:fontFamily="@font/montserrat_medium"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="11pt" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/regisbtn"
+            android:onClick="regispage"
+            android:layout_width="340dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/button_style_3"
+            android:text="Register"
+            android:fontFamily="@font/montserrat_medium"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:textColor="#404445"
+            android:textSize="10pt"/>
+
+        <!--TEXT -->
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text=" Kebaikan Alam \n Kebaikan Hidup "
+            android:textAlignment="center"
+            android:textColor="#4D4D4D"
+            android:textSize="10pt"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
