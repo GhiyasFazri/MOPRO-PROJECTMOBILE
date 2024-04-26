@@ -11,11 +11,13 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toolbar;
 
+import android.widget.ImageButton;
+import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View.OnClickListener;
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.GravityCompat;
 import androidx.core.view.ViewCompat;
@@ -33,6 +35,10 @@ import java.util.List;
 
 public class HomePageActivity extends AppCompatActivity {
 
+    DrawerLayout drawerLayout;
+    NavigationView navigationView;
+    ImageButton btnOpenDrawer;
+
     private ViewPager2 viewPager2;
 
     @Override
@@ -40,14 +46,17 @@ public class HomePageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_homepage);
+
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        ImageView toolbar = findViewById(R.id.toolbar);
+        drawerLayout = findViewById(R.id.homepage);
+        navigationView = findViewById(R.id.nav_view1);
+        btnOpenDrawer = findViewById(R.id.hamburger1);
 
-        toolbar.setOnClickListener(new OnClickListener() {
+        btnOpenDrawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openDrawer();
+                drawerLayout.openDrawer(GravityCompat.END);
             }
         });
 
@@ -85,12 +94,6 @@ public class HomePageActivity extends AppCompatActivity {
             return insets;
         });
 
-    }
-
-    private void openDrawer() {
-        DrawerLayout drawerLayout = findViewById(R.id.homepage);
-        NavigationView navigationView = findViewById(R.id.nav_viewhomepage);
-        drawerLayout.openDrawer(GravityCompat.END);
     }
 
 }

@@ -7,4 +7,12 @@
 
     <style name="Theme.AppIntent" parent="Base.Theme.AppIntent" />
 
+    <style name="Theme.AppIntent.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.AppIntent.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.AppIntent.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>
